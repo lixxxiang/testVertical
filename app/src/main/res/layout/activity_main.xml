@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="MissingConstraints">
+        <q.rorbin.verticaltablayout.VerticalTabLayout
+            android:id="@+id/tablayout"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:background="#EDEDED"
+            app:indicator_color="#FFFFFF"
+            app:indicator_gravity="fill"
+            app:tab_height="50dp"
+            app:tab_mode="scrollable" />
+
+        <com.android.lixiang.testvertical.YViewPager
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/viewpager"></com.android.lixiang.testvertical.YViewPager>
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
